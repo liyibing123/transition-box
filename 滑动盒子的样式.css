@@ -1,0 +1,32 @@
+body{
+	padding: 0px;
+	margin:0px;
+}
+label[for="toggle"]{
+	font-size: 3rem;
+	position: fixed;
+	top:10px;
+	right:14px;
+	z-index: 1;
+}
+input[id="toggle"]{
+	position:absolute;
+	top:-370px;
+}
+aside{
+	width:300px;
+	height:98%;
+	padding:10px 1%;
+	background-color:#a60000;
+	color:white;
+	font-size:20px;
+	position:fixed;
+	top:0px;
+	right:-350px;
+	transition-property:all;
+	transition-duration:2s;
+}
+
+input[id="toggle"]:checked + aside{
+	right:0px;
+}
